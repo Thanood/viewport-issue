@@ -1,0 +1,12 @@
+<template>
+    <router-view name="header"></router-view>
+    <router-view></router-view>
+
+    <div>
+        <ul>
+            <li repeat.for="row of router.navigation">
+                <a href.bind="row.href">${row.title}</a>
+            </li>
+        </ul>
+    </div>
+</template>
